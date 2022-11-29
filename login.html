@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="form-container">
+
+            <div class="srouce"><a title="Login Page" href="Project1.html">Cars & More</a></div>
+
+            <div class="form-body">
+                <h2 class="title">Log in with</h2>
+                <div class="social-login">
+                    <ul>
+                        <li class="google"><a href="#">Google</a></li>
+                        <li class="fb"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="_or">or</div>
+
+                <form method="post" class="the-form" name="form" target="#" onsubmit="return validate()"
+                    action="Project1.html">
+
+                    <label for="email">Email</label>
+                    <input  type="email" name="email" id="email" placeholder="Enter your email" pattern="/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/"  required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/">
+
+                    <input type="submit" name="validate" value="Login" id="button" onclick="validatePassword" />
+            </div>
+
+        </div>
+
+        <div class="form-footer">
+            <div>
+                <span>Don't have an account?</span> <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
